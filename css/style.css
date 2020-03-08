@@ -138,10 +138,11 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #ffffff;
+  background: #ebebeb;
 }
 
 main .about {
+  background: #fff;
   margin: 30px auto;
   width: 1100px;
   -webkit-box-shadow: 0px 0px 13px 3px rgba(0, 0, 0, 0.3);
@@ -168,5 +169,50 @@ main .about img {
   width: 200px;
   height: auto;
   margin: -150px 0 50px 0;
+}
+
+main #skills {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #skills h1 {
+  text-align: center;
+  background: #fff;
+  border: 1px solid white;
+  -webkit-box-shadow: 0px 0px 13px 3px rgba(255, 255, 255, 0.8);
+          box-shadow: 0px 0px 13px 3px rgba(255, 255, 255, 0.8);
+}
+
+main #skills #skillbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #skills .skillcard {
+  background: #ffffff;
+  padding: 1rem;
+  margin: 2rem;
+  width: 300px;
+  height: 500px;
+  -webkit-box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.6);
+}
+
+footer {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  background: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
