@@ -21,10 +21,11 @@ body{
     justify-content: center;
 }
 header{
-    // margin-bottom: 2rem;
-    
+    margin-bottom: 2rem;
+    box-shadow: 0px 2px 13px 3px rgba(0,0,0,0.75);
 
     .navbar{
+        box-shadow: 0px 2px 13px 3px rgba(0,0,0,0.75);
         padding-left: 7%;
         width: 100%;
         background-color: #212529;
@@ -37,6 +38,7 @@ header{
         }
     }
     .container{
+        margin-top: 50px;
         padding: 4rem 2rem;
         max-width: 100%;
         background-color: #e9ecef;
@@ -63,8 +65,9 @@ header{
 main{
     
     #about{
-    
+        border: 1px solid black;
       p{
+          padding: 2rem;
           font-size: 25px;
         
       }

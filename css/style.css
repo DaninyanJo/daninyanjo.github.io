@@ -28,7 +28,15 @@ body {
           justify-content: center;
 }
 
+header {
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 0px 2px 13px 3px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 2px 13px 3px rgba(0, 0, 0, 0.75);
+}
+
 header .navbar {
+  -webkit-box-shadow: 0px 2px 13px 3px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 2px 13px 3px rgba(0, 0, 0, 0.75);
   padding-left: 7%;
   width: 100%;
   background-color: #212529;
@@ -43,6 +51,7 @@ header .navbar .navbar-brand {
 }
 
 header .container {
+  margin-top: 50px;
   padding: 4rem 2rem;
   max-width: 100%;
   background-color: #e9ecef;
@@ -82,7 +91,12 @@ header .container img {
           box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.7);
 }
 
+main #about {
+  border: 1px solid black;
+}
+
 main #about p {
+  padding: 2rem;
   font-size: 25px;
 }
 
