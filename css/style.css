@@ -7,6 +7,11 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 body {
   background: #fff;
   width: 100%;
@@ -119,11 +124,39 @@ main #skills .progress {
   border-top: 1px solid #2c2c2c;
 }
 
-footer {
-  font-family: 'Josefin Sans', sans-serif;
+main #portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-footer p {
-  font-size: 20px;
+main #portfolio h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+footer {
+  font-family: 'Josefin Sans', sans-serif;
+  background: #2c2c2c;
+  width: 100%;
+  height: 500px;
+  color: white;
+}
+
+footer #footer {
+  margin-top: 50px;
+}
+
+footer #links > div {
+  margin: 1em;
+  font-size: 25px;
 }
 /*# sourceMappingURL=style.css.map */
