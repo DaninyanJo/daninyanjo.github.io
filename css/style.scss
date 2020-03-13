@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif+Caption&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +13,6 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-
 header{
     margin-bottom: 2rem;
 
@@ -18,14 +20,14 @@ header{
         padding-left: 7%;
         width: 100%;
         background-color: #212529;
-        font-size: 30px;
+        font-size: 20px;
         .navbar-brand{
-            font-size: 30px;
+            font-size: 25px;
             border-right: 2.5px solid #fff;
             padding-right: 1.5rem;
+            font-family: 'Josefin Sans', sans-serif;
         }
     }
-
     .container{
         padding: 4rem 2rem;
         max-width: 100%;
@@ -35,6 +37,7 @@ header{
         justify-content: center;
         
         >div{
+            font-family: 'Spartan', sans-serif;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -42,18 +45,31 @@ header{
             padding-left: 5%; 
         }
         img{
-            width: 350px;
+            width: 300px;
             border: 1px solid  hsl(0, 0%, 50%);
             border-radius: 50%;
             box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.7);
-            
         }
     }
 }
 main{
+    h2{
+        font-size: 30px;
+        background-color: rgb(44, 44, 44);
+        color: #fff;
+        padding: 15px 25px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    p{
+        font-size: 23px;
+        margin-left: 1.5rem;
+        font-family: 'PT Serif Caption', serif;
+    }
+    #about{
+       
+    }
     
-    .container{
-        
+    #skills{
+
     }
 }
-
