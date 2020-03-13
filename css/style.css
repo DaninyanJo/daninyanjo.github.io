@@ -32,6 +32,9 @@ header {
   margin-bottom: 2rem;
   -webkit-box-shadow: 0px 2px 13px 3px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 2px 13px 3px rgba(0, 0, 0, 0.75);
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header .navbar {
@@ -54,7 +57,6 @@ header .container {
   margin-top: 50px;
   padding: 4rem 2rem;
   max-width: 100%;
-  background-color: #e9ecef;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,12 +85,29 @@ header .container > div {
   padding-left: 5%;
 }
 
+header .container #name {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0 10px;
+}
+
+header .container #name h1 {
+  margin: 0;
+  padding: 10px 0 0 0;
+  border-top: 1px solid black;
+}
+
+header .container #name h4 {
+  margin: 0;
+  padding: 10px 0 0 0;
+  border-bottom: 1px solid black;
+}
+
 header .container img {
   width: 300px;
   border: 1px solid gray;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.7);
-          box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 10px 7px 15px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 7px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
 main #about {
@@ -96,7 +115,7 @@ main #about {
 }
 
 main #about p {
-  padding: 2rem;
+  padding-left: 2rem;
   font-size: 25px;
 }
 
@@ -169,8 +188,21 @@ footer #footer {
   margin-top: 50px;
 }
 
+footer #links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 footer #links > div {
   margin: 1em;
   font-size: 25px;
+  padding-left: 1rem;
+  border-left: 2px solid white;
+}
+
+footer #links a:hover {
+  color: #8721db;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
