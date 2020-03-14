@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    background: #1E2446;
+}
+/* всё что касается шапки*/
+header{
+    position: relative;
+    background: #11112a;
+    margin: 0;
+    padding: 0;
+    z-index: 101;
+}
+#title{
+    position: relative;
+    margin: 0 auto;
+    padding: 0 5px;
+    max-width: 25%;
+    text-align: center;
+    border: 3px solid #aCF850;
+    text-shadow: 0 0 10px #aCF850, 0 0 15px white;
+    line-height: 10px;
+    background: #363658;
+    color: #BCF850 ;
+    transform: rotate(360deg) scale(-1, -1);    
+    transition: 1s;
+}
+
+/*Всё что касается контента*/
+main{
+    margin: 0 auto;
+    max-width: 800px;
+    
+}
+#toDoList{
+    opacity: 0;
+    transform: translateY(-500px);
+    transition: 3s;
+    z-index: 100;
+}
+#input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+#input textarea{
+    border: 4px solid white;
+    border-bottom: 0;
+    background: lightgrey;
+    height: 100px;
+    resize:  none;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+    font-family: Arial Black,sans-serif;
+    font-size: 16px;
+}
+#input button{
+    background: #84e07f;
+    border: 4px solid white;
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+textarea:focus,
+button:focus {
+    outline: none;
+}
+#output{
+    position: relative;
+}
+
+.task{
+    position: relative;
+}
+.task p{
+    cursor: default;
+    margin: 1em 0 1em;
+    padding: 10px 45px 10px 15px;
+    background: #918DFF;
+    border-radius: 20px;
+    color:#f8f548;
+    border-left: 2px solid black;
+    word-wrap: break-word;
+}
+.remove{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: radial-gradient(#ff6a83, rgba( 167, 47, 79, 0.71 ));
+/*    background: #ff6a83;*/
+    border-radius: 100%;
+    border-left: 2px solid black;
+    cursor: pointer;
+    
+    
+}
+.remove:before{
+    position: absolute;
+    right: 0;
+    top: 16px; 
+    display: block;
+    content: '';
+    width: 35px;
+    height: 2px;
+    background: #f8f548;
+    transform: rotate(45deg);
+    border-radius: 100%;
+    transition: 1.5s;
+}
+.remove:hover:before{
+    box-shadow : 0 0 10px #f8f548;
+    transform: rotate(-315deg);
+    transition: 1s;
+}
+.remove:after{
+    position: absolute;
+    right: 0;
+    top: 19px; 
+    display: block;
+    content: '';
+    width: 35px;
+    height: 2px;
+    background: #f8f548;
+    transform: rotate(-45deg);
+    border-radius: 100%;
+    transition: 1.5s;
+}
+.remove:hover:after{
+    box-shadow : 0 0 10px #f8f548;
+    transform: rotate(315deg);
+    transition: 1s;
+}
+/*Всё что ниже контента*/
+footer{
+    display: flex;
+    justify-content: center;
+}
+#clear{
+    background: #918DFF;
+    border: 2px solid #555aaa;
+    border-radius: 10px;
+    color: #b20f17;
+    text-shadow: 0 0 4px #555aaa, 0 0 2px #b20f17;
+}
+
+/*Другие стили*/
+.line{
+    display: block;
+    margin: 0 0 1em 0;
+    padding: 0;
+    border: 1px solid #FF6A83;
+    background: #ff6a83;
+    transition: 1s;
+}
+#line1 , #line2{
+    transform: rotateY(90deg);
+    transition: 4s;
+}
+
