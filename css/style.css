@@ -29,7 +29,6 @@ body {
 }
 
 header {
-  margin-bottom: 2rem;
   -webkit-box-shadow: 0px 2px 13px 3px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 2px 13px 3px rgba(0, 0, 0, 0.75);
   background-image: url(../images/header-bg.jpg);
@@ -87,7 +86,7 @@ header .container > div {
 
 header .container #name {
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 0 10px;
+  padding: 50px;
 }
 
 header .container #name h1 {
@@ -102,21 +101,37 @@ header .container #name h4 {
   border-bottom: 1px solid black;
 }
 
-header .container img {
-  width: 300px;
-  border: 1px solid gray;
-  border-radius: 50%;
-  -webkit-box-shadow: 10px 7px 15px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 10px 7px 15px 0px rgba(0, 0, 0, 0.75);
+main {
+  background: #969696;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 main #about {
-  border: 1px solid black;
+  margin-top: 100px;
+  background: #fff;
+  padding: 3em;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main #about p {
   padding-left: 2rem;
   font-size: 25px;
+}
+
+main #about img {
+  width: 300px;
+  border-radius: 50%;
 }
 
 main h2 {
