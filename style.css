@@ -1,15 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: .5rem;
+}
+
 body{
-    background: #49525a;
-}
+    width: 100%;
+    min-height: 100vh;
 
+    background-image: url(./images/sacura_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
 
-.navbar-nav{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.navbar-nav  li{
-    margin: 0 10px;
-    
+section{
+    background: rgba(255,255,255, .69);
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 1rem;
+    padding: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+section>div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
