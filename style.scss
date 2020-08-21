@@ -1,5 +1,7 @@
 // @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -10,8 +12,11 @@ img{
     width: 100%;
     height: auto;
 }
+ul,li {
+    list-style: none;
+}
 body{
-    background: #727272;
+    background: #dbdbdb;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -27,13 +32,14 @@ nav{
         justify-content: center;
     }
     li{
+        
         list-style: none;
         font-size: 1.4rem;
         padding: 0.7em;
         transition: all .4s;
 
         &:hover{
-            background: rgb(228, 60, 60);
+            background: rgb(228, 69, 69);
             color: #000;
             
         }
@@ -41,31 +47,89 @@ nav{
 }
 
 section{
-    margin: 0 auto;
-    max-width: 800px;
+    margin: 2.5rem auto;
+    max-width: 1200px;
     
 }
 
 main{
     flex-grow: 1;
+    h1{
+        display: flex;
+        justify-content: center;
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 36px;  
+    }
+    h3 {
+        font-size: 36px;  
+    }
+    li{
+        font-size: 24px;
+    }
+    p{
+        font-size: 24px;
+    }
 }
 .about{
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
+    flex-wrap: wrap;
+    >div{
+        margin: .5rem;
+    }
+
+    .about_info{
+        padding: 1rem;
+        border-left: 2px solid rgba(228, 69, 69, .75);
+        background: #ffffff69;
+        box-shadow: 3px 5px 10px 3px #16161675;
+        font-family: 'Baloo Tamma 2', cursive;
+        max-width: 400px;
+    }
+    .photo{
+        
+        img{
+            max-width: 400px;
+            border-radius: 50px;
+            box-shadow: 3px 5px 10px 3px #16161675;
+        }
+    }
+
 }
 
 
 
 
+.skills{
+    margin: 5rem 0;
+    font-family: 'Baloo Tamma 2', cursive;
+   
+    
+}
+.skillbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    >div{
+        border-left: 3px solid rgb(228, 228, 32);
+        padding-left: 1rem;
+    }
+}
 
 
-
-
+.education {
+    
+}
 
 
 
 footer{
+    padding: 1rem 0;
     section{
         display: flex;
         flex-direction: row;

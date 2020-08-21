@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -12,8 +13,12 @@ img {
   height: auto;
 }
 
+ul, li {
+  list-style: none;
+}
+
 body {
-  background: #727272;
+  background: #dbdbdb;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,13 +54,13 @@ nav li {
 }
 
 nav li:hover {
-  background: #e43c3c;
+  background: #e44545;
   color: #000;
 }
 
 section {
-  margin: 0 auto;
-  max-width: 800px;
+  margin: 2.5rem auto;
+  max-width: 1200px;
 }
 
 main {
@@ -64,7 +69,35 @@ main {
           flex-grow: 1;
 }
 
+main h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3.5rem;
+}
+
+main h2 {
+  font-size: 36px;
+}
+
+main h3 {
+  font-size: 36px;
+}
+
+main li {
+  font-size: 24px;
+}
+
+main p {
+  font-size: 24px;
+}
+
 .about {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,12 +105,61 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about > div {
+  margin: .5rem;
+}
+
+.about .about_info {
+  padding: 1rem;
+  border-left: 2px solid rgba(228, 69, 69, 0.75);
+  background: #ffffff69;
+  -webkit-box-shadow: 3px 5px 10px 3px #16161675;
+          box-shadow: 3px 5px 10px 3px #16161675;
+  font-family: 'Baloo Tamma 2', cursive;
+  max-width: 400px;
+}
+
+.about .photo img {
+  max-width: 400px;
+  border-radius: 50px;
+  -webkit-box-shadow: 3px 5px 10px 3px #16161675;
+          box-shadow: 3px 5px 10px 3px #16161675;
+}
+
+.skills {
+  margin: 5rem 0;
+  font-family: 'Baloo Tamma 2', cursive;
+}
+
+.skillbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
+.skillbox > div {
+  border-left: 3px solid #e4e420;
+  padding-left: 1rem;
+}
+
 footer {
+  padding: 1rem 0;
   background: #161616;
   color: #fff;
 }
